@@ -468,7 +468,7 @@ export default function Navbar() {
       {/* Navbar for Larger Screens */}
       <nav className="hidden md:flex fixed w-full bg-gray-900 text-white py-4 z-10">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold">[Your Name]</h1>
+          <h1 className="text-xl font-bold">Stephanie Udemezue</h1>
           <div className="space-x-4">
             <Link href="#about">About</Link>
             <Link href="#skills">Skills</Link>

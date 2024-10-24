@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Projects() {
   const projects = [
     {
@@ -23,7 +24,7 @@ export default function Projects() {
             key={index}
             className="bg-white rounded-lg shadow-lg overflow-hidden"
           >
-            <img
+            <Image
               src={project.img}
               alt={project.title}
               className="w-full h-48 object-cover"
