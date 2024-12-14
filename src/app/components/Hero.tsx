@@ -1,11 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+
 export default function Hero() {
   return (
     <header id="home" className="relative min-h-screen flex items-center">
       {/* Dynamic background with gradient overlay */}
       <div className="absolute inset-0 bg-[url('/images/hero-pattern.png')] bg-cover">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-blue-900/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-800/90"></div>{" "}
+        {/* Darker gradient */}
       </div>
 
       <div className="container mx-auto px-6 py-24 relative z-10">

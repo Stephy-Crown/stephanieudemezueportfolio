@@ -3,8 +3,9 @@ export default function Contact() {
     // Contact Section
     <section
       id="contact"
-      className="py-24 bg-gradient-to-r from-purple-600 to-blue-500 text-white"
+      className="py-24  text-white  bg-gradient-to-r from-gray-900/90 to-gray-800/90"
     >
+      {/* bg-gradient-to-r from-purple-600 to-blue-500 */}
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8">
