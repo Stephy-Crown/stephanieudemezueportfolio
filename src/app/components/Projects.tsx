@@ -13,32 +13,73 @@ import {
 export default function Projects() {
   const projects = [
     {
-      title: "Project One",
+      title: "StephFolio",
       description:
-        "A full-stack web application built with Next.js and Node.js",
-      image: "/images/project-one.png",
-      technologies: ["React", "Node.js", "MongoDB"],
-      link: "/project-one",
-      github: "https://github.com/username/project-one",
-      icon: <FaRocket className="text-purple-600 w-6 h-6" />,
-    },
-    {
-      title: "Project Two",
-      description: "Mobile-first e-commerce platform with real-time updates",
-      image: "/images/project-two.png",
-      technologies: ["React Native", "Firebase", "Redux"],
-      link: "/project-two",
-      github: "https://github.com/username/project-two",
-      icon: <FaShoppingCart className="text-purple-600 w-6 h-6" />,
-    },
-    {
-      title: "Project Three",
-      description: "An innovative design project for modern web experiences",
-      image: "/images/project-three.png",
-      technologies: ["React", "Figma", "CSS"],
-      link: "/project-three",
-      github: "https://github.com/username/project-three",
+        "A sleek single page portfolio showcasing my skills, projects, and experiences. Includes a Hero section, a Projects section  that highlights my work with descriptions and visuals, and a Contact section for inquiries. It is designed with a clean layout and responsive design for a seamless user experience across devices.",
+      image: "/stephfolo.png",
+      technologies: ["Next.js", "Figma", "TalwindCSS"],
+      link: "/https://stephanieudemezueportfolio.vercel.app/",
+      github: "",
       icon: <FaPalette className="text-purple-600 w-6 h-6" />,
+      bgColor: "bg-gradient-to-r from-gray-900/90 to-purple-800/90",
+    },
+    {
+      title: "An Authentication App",
+      description:
+        "A Next.js authentication application integrated with Clerk for seamless user authentication, providing a secure and login experience.The backend is powered by MongoDB, a NoSQL database, and Mongoose for elegant MongoDB object modeling in Node.js.",
+
+      // image: "/1.png",
+      image: "/1-removebg-preview.png",
+      technologies: ["Next.js", "Clerk", "MongoDB"],
+      link: "https://next-auth-app-s4s1.vercel.app/",
+      github: "hhttps://github.com/Stephy-Crown/AuthApp",
+      icon: <FaRocket className="text-purple-600 w-6 h-6" />,
+      bgColor: "bg-purple-600", // Custom background color
+    },
+    {
+      title: "Ceremonies Website",
+      description:
+        "A simple beautiful 3-page wedding officiating website designed with a clean, elegant layout and romantic color scheme to create a welcoming online presence. It features a Home page with services and testimonials, an About page highlighting the officiant's story, and a Contact page to easily book wedding services.",
+      image: "/beautfulceremony.png",
+      technologies: ["Next.js", "TalwindCSS"],
+      link: "https://bcapp.netlify.app/",
+      github: "",
+      icon: <FaShoppingCart className="text-purple-600 w-6 h-6" />,
+      bgColor: "bg-fuchsia-800",
+    },
+
+    {
+      title: "IMDB Movie Clone App",
+      description:
+        "A minimalist movie database app with a sleek toggle black-and-white theme. Features a powerful search bar for finding movies instantly and  to keep users updated on new movies. It combines simplicity with functionality, offering a clean user experience focused on discovering and exploring films.",
+      image: "/mdb.png",
+      technologies: ["Next.js", "Figma", "TailwindCSS"],
+      link: "https://imdb-clone-app-v1.vercel.app/",
+      github: "https://github.com/Stephy-Crown/IMDb-Clone-App",
+      icon: <FaPalette className="text-purple-600 w-6 h-6" />,
+      bgColor: "bg-orange-700",
+    },
+    {
+      title: "BlogLab",
+      description:
+        "A dynamic and user-friendly blog platform where users can add, edit, and view blogs. The app features a clean interface with a responsive design, allowing users to share their thoughts seamlessly. Includes a form for adding blog posts, a blog listing page, and individual blog detail pages for an engaging reading and writing experience.",
+      image: "/bloglab.png",
+      technologies: ["React", "CSS"],
+      link: "https://stephy-blog.vercel.app/",
+      github: "https://github.com/Stephy-Crown/Stephy-Blog",
+      icon: <FaPalette className="text-purple-600 w-6 h-6" />,
+      bgColor: "bg-pink-600",
+    },
+    {
+      title: "Budget Tracker App",
+      description:
+        "A simple yet powerful app designed to help users track their income and expenses. The app features a clean, intuitive interface with options to add transactions, categorize expenses, and visualize spending trends. Users can set budget limits, monitor financial goals, and stay on top of their financial health, all within a user-friendly and responsive design.",
+      image: "/tracer.png",
+      technologies: ["Javascript", "HTML", "CSS"],
+      link: "https://budget-tracker-app-ebon.vercel.app/",
+      github: "https://github.com/Stephy-Crown/Budget-Tracker-App",
+      icon: <FaPalette className="text-purple-600 w-6 h-6" />,
+      bgColor: "bg-green-600",
     },
   ];
 
@@ -49,19 +90,25 @@ export default function Projects() {
           {/* Icon for projects */}
           Featured Projects
         </h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 max-w-6xl mx-auto">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all overflow-hidden"
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all overflow-hidden "
             >
-              <div className="relative overflow-hidden aspect-video">
+              {/* className={`group rounded-2xl shadow-lg hover:shadow-xl transition-all overflow-hidden ${project.bgColor}`} */}
+              <div
+                className={`relative overflow-hidden aspect-video ${project.bgColor} `}
+              >
+                <h1 className="text-center text-white font-bold pt-3 ">
+                  {project.title}
+                </h1>
                 <Image
                   src={project.image}
                   alt={project.title}
                   layout="fill"
                   objectFit="cover"
-                  className="group-hover:scale-105 transition-transform duration-500"
+                  className="group-hover:scale-105 transition-transform duration-500 pt-10"
                 />
               </div>
               <div className="p-8">

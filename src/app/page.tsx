@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 
 import RippleEffect from "./components/RippleEffect";
+import About from "./components/About";
 
 const Home = () => {
   const [pageLoading, setPageLoading] = useState(true);
@@ -28,6 +29,7 @@ const Home = () => {
       <Navbar />
 
       <Hero />
+      <About />
       {/* <div className="bg-[url('/images/hero-pattern.png')]"> */}
       <Skills />
       {/* </div> */}

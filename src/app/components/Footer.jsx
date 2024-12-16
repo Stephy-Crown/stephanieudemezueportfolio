@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,23 +17,29 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="flex justify-center space-x-6">
           <Link
-            href="https://github.com"
+            href="https://github.com/Stephy-Crown"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 hover:text-gray-800 transition-colors"
           >
             <FaGithub className="w-6 h-6" />
           </Link>
-          <Link
+          {/* <Link
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 hover:text-gray-800 transition-colors"
           >
             <FaTwitter className="w-6 h-6" />
+          </Link> */}
+          <Link
+            href="udemezuestephanie6@email.com"
+            className="text-gray-600 hover:text-gray-800 transition-colors"
+          >
+            <FaEnvelope size={27} />
           </Link>
           <Link
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/Stephanie-udemezue/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 hover:text-gray-800 transition-colors"

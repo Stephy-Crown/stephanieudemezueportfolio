@@ -1,41 +1,50 @@
+import { FaEnvelope, FaUser, FaPaperPlane } from "react-icons/fa";
+
 export default function Contact() {
+  // Common class names for form inputs
+  const inputClass =
+    "w-full px-6 py-4 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500 focus:outline-none";
+
   return (
-    // Contact Section
     <section
       id="contact"
-      className="py-24  text-white  bg-gradient-to-r from-gray-900/90 to-gray-800/90"
+      className="py-24 text-white bg-gradient-to-r from-gray-900/90 to-gray-800/90"
     >
-      {/* bg-gradient-to-r from-purple-600 to-blue-500 */}
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8">
-            Let&apos;s Work Together! 🤝
-          </h2>
+          <h2 className="text-4xl font-bold mb-8">Let&apos;s Work Together</h2>
           <p className="text-xl mb-12">
             I&apos;m always open to discussing new projects, creative ideas, or
             opportunities to be part of your visions.
           </p>
           <form className="max-w-lg mx-auto space-y-6">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full px-6 py-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white placeholder-white/60 focus:ring-2 focus:ring-white/50 focus:outline-none"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full px-6 py-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white placeholder-white/60 focus:ring-2 focus:ring-white/50 focus:outline-none"
-            />
+            <div className="relative">
+              <FaUser className="absolute top-1/2 left-4 transform -translate-y-1/2 text-gray-400" />
+              <input
+                type="text"
+                placeholder="Your Name"
+                className={`pl-12 ${inputClass}`}
+              />
+            </div>
+            <div className="relative">
+              <FaEnvelope className="absolute top-1/2 left-4 transform -translate-y-1/2 text-gray-400" />
+              <input
+                type="email"
+                placeholder="Your Email"
+                className={`pl-12 ${inputClass}`}
+              />
+            </div>
             <textarea
               placeholder="Your Message"
               rows={4}
-              className="w-full px-6 py-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white placeholder-white/60 focus:ring-2 focus:ring-white/50 focus:outline-none"
+              className={inputClass}
             ></textarea>
             <button
               type="submit"
-              className="w-full px-8 py-4 bg-white text-purple-600 rounded-lg hover:shadow-lg hover:scale-105 transition-all font-semibold"
+              className="w-full px-8 py-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all font-semibold flex justify-center items-center space-x-2"
             >
-              Send Message 📤
+              <FaPaperPlane />
+              <span>Send Message</span>
             </button>
           </form>
         </div>

@@ -10,7 +10,7 @@ export default function Hero() {
         {/* Darker gradient */}
       </div>
 
-      <div className="container mx-auto px-6 py-24 relative z-10">
+      <div className="container mx-auto px-6 md:py-24 py-16  relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-white">
             <div className="flex flex-col items-center md:items-start">
@@ -45,7 +45,7 @@ export default function Hero() {
               </div>
 
               {/* Description box */}
-              <div className="w-full md:w-auto mb-12 p-8 rounded-2xl backdrop-blur bg-white/5 border border-purple-500/20 text-center md:text-left group hover:bg-white/10 transition-all duration-300">
+              <div className="w-full md:w-auto mb-12 mt-5 p-8 rounded-2xl backdrop-blur bg-white/5 border border-purple-500/20 text-center md:text-left group hover:bg-white/10 transition-all duration-300">
                 <p className="text-lg text-purple-100 leading-relaxed">
                   Crafting digital experiences that merge innovation with
                   functionality. With a keen eye for design and a mastery of

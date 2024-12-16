@@ -42,7 +42,7 @@ export default function Navbar() {
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <Link
             href="/"
-            className="text-xl font-bold text-purple-600 hover:text-purple-700 flex items-center"
+            className="text-xl font-bold text-gradient-to-r from-gray-900/5 to-purple-800/90 hover:text-purple-700 flex items-center"
           >
             <FaCode className="mr-2" /> Stephfolio
           </Link>
@@ -73,7 +73,7 @@ export default function Navbar() {
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-6">
             <Link
-              href="https://github.com"
+              href="https://github.com/Stephy-Crown"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-600"
@@ -81,7 +81,7 @@ export default function Navbar() {
               <FaGithub size={27} />
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/Stephanie-udemezue/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-600"
@@ -89,7 +89,7 @@ export default function Navbar() {
               <FaLinkedin size={27} />
             </Link>
             <Link
-              href="mailto:example@email.com"
+              href="udemezuestephanie6@email.com"
               className="hover:text-purple-600"
             >
               <FaEnvelope size={27} />
