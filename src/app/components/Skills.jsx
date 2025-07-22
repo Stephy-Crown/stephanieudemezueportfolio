@@ -125,7 +125,7 @@ const Skills = () => {
             ></path>
           </svg>
         ),
-        level: 85,
+        // level: 85,
       },
       {
         name: "MongoDB",
@@ -345,7 +345,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="relative min-h-screen">
+    <section id="skills" className="relative">
       <div className="absolute inset-0 bg-[url('/images/hero-pattern.png')] bg-cover bg-center">
         <div className="absolute inset-0 bg-gray-900/95"></div>
       </div>

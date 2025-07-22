@@ -7,22 +7,44 @@ import {
   FaRocket,
   FaShoppingCart,
   FaPalette,
+  FaUsers,
+  FaDatabase,
+  FaChartLine,
+  // FaUserGraduate,
 } from "react-icons/fa";
 // import { FaProjectDiagram } from "react-icons/fa"; // Import a project-related icon
 
 export default function Projects() {
   const projects = [
+   
     {
-      title: "StephFolio",
-      description:
-        "A sleek single page portfolio showcasing my skills, projects, and experiences. Includes a Hero section, a Projects section  that highlights my work with descriptions and visuals, and a Contact section for inquiries. It is designed with a clean layout and responsive design for a seamless user experience across devices.",
-      image: "/stephfolo.png",
-      technologies: ["Next.js", "Figma", "TalwindCSS"],
-      link: "/https://stephanieudemezueportfolio.vercel.app/",
-      github: "",
-      icon: <FaPalette className="text-purple-600 w-6 h-6" />,
-      bgColor: "bg-gradient-to-r from-gray-900/90 to-purple-800/90",
-    },
+    title: "FutureStore AI Admin App",
+    description:
+      "A modern admin dashboard built with role-based access (Admin, Manager, Support). Features dynamic UI components, seamless CRUD operations, and optimized performance using the Next.js App Router.",
+    image: "/futurestore.png", // Update with actual image path
+    technologies: ["Next.js", "Redux Toolkit", "React Query", "Tailwind CSS"],
+    link: "https://futurestore-admin.vercel.app", // Update with actual link
+    github: "", // Add GitHub repo if available
+    icon: <FaDatabase className="text-green-600 w-6 h-6" />,
+    bgColor: "bg-gradient-to-r from-green-900/90 to-gray-800/90",
+  },
+  {
+    title: "Teamverse",
+    description:
+      "An open-source gamified team bonding platform enhancing remote collaboration using games and seamless Web3 onboarding via Argent Invisible Wallet. Built with accessible and modern frontend technologies.",
+    image: "/teamverse.png", // Update with actual image path
+    technologies: [
+      "Next.js",
+      "Tailwind CSS",
+      "Radix UI",
+      "TypeScript",
+      "Argent Wallet",
+    ],
+    link: "https://teamverse.xyz", // Replace with actual link
+    github: "", // Add GitHub repo if public
+    icon: <FaUsers className="text-blue-600 w-6 h-6" />,
+    bgColor: "bg-gradient-to-r from-blue-900/90 to-gray-700/90",
+  },
     {
       title: "An Authentication App",
       description:
@@ -47,6 +69,29 @@ export default function Projects() {
       icon: <FaShoppingCart className="text-purple-600 w-6 h-6" />,
       bgColor: "bg-fuchsia-800",
     },
+     {
+      title: "StephFolio",
+      description:
+        "A sleek single page portfolio showcasing my skills, projects, and experiences. Includes a Hero section, a Projects section  that highlights my work with descriptions and visuals, and a Contact section for inquiries. It is designed with a clean layout and responsive design for a seamless user experience across devices.",
+      image: "/stephfolo.png",
+      technologies: ["Next.js", "Figma", "TalwindCSS"],
+      link: "/https://stephanieudemezueportfolio.vercel.app/",
+      github: "",
+      icon: <FaPalette className="text-purple-600 w-6 h-6" />,
+      bgColor: "bg-gradient-to-r from-gray-900/90 to-purple-800/90",
+    },
+//     {
+//   title: "Student Admission Portal Dashboard",
+//   // title: "Student Admission Portal & Admin Dashboard",
+//   description:
+//     "A comprehensive school admission portal with an intuitive user dashboard for applicants and an admin panel for managing applications, admissions, and user data. Features include form submission, status tracking, secure login, and CRUD operations.",
+//   image: "/admission-portal.png", // Update with actual image path
+//   technologies: ["Next.js", "Redux Toolkit", "Tailwind CSS", "TypeScript"],
+//   link: "https://schooladmission-dashboard.vercel.app", // Replace with actual link
+//   github: "", // Add GitHub repo if available
+//   icon: <FaUserGraduate className="text-yellow-600 w-6 h-6" />,
+//   bgColor: "bg-gradient-to-r from-yellow-700/90 to-gray-900/90",
+// },
 
     {
       title: "IMDB Movie Clone App",
@@ -70,17 +115,28 @@ export default function Projects() {
       icon: <FaPalette className="text-purple-600 w-6 h-6" />,
       bgColor: "bg-pink-600",
     },
+    // {
+    //   title: "Budget Tracker App",
+    //   description:
+    //     "A simple yet powerful app designed to help users track their income and expenses. The app features a clean, intuitive interface with options to add transactions, categorize expenses, and visualize spending trends. Users can set budget limits, monitor financial goals, and stay on top of their financial health, all within a user-friendly and responsive design.",
+    //   image: "/tracer.png",
+    //   technologies: ["Javascript", "HTML", "CSS"],
+    //   link: "https://budget-tracker-app-ebon.vercel.app/",
+    //   github: "https://github.com/Stephy-Crown/Budget-Tracker-App",
+    //   icon: <FaPalette className="text-purple-600 w-6 h-6" />,
+    //   bgColor: "bg-green-600",
+    // },
     {
-      title: "Budget Tracker App",
-      description:
-        "A simple yet powerful app designed to help users track their income and expenses. The app features a clean, intuitive interface with options to add transactions, categorize expenses, and visualize spending trends. Users can set budget limits, monitor financial goals, and stay on top of their financial health, all within a user-friendly and responsive design.",
-      image: "/tracer.png",
-      technologies: ["Javascript", "HTML", "CSS"],
-      link: "https://budget-tracker-app-ebon.vercel.app/",
-      github: "https://github.com/Stephy-Crown/Budget-Tracker-App",
-      icon: <FaPalette className="text-purple-600 w-6 h-6" />,
-      bgColor: "bg-green-600",
-    },
+  title: "MoneySense – AI-Powered Fintech App",
+  description:
+    "A financial planning web platform built with AI assistance. Features include smart budgeting tools, personalized dashboards, and real-time analytics, developed using Next.js and deployed with CI/CD pipelines.",
+  image: "/moneysense.png", // Update with actual image path
+  technologies: ["Next.js", "Chart.js", "Recharts", "Tailwind CSS", "TypeScript"],
+  link: "https://moneysense-nine.vercel.app/", // Update with actual link
+  github: "", // Add GitHub repo if available
+  icon: <FaChartLine className="text-blue-600 w-6 h-6" />,
+  bgColor: "bg-gradient-to-r from-blue-900/90 to-gray-800/90",
+},
   ];
 
   return (
@@ -94,22 +150,24 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all overflow-hidden "
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all overflow-hidden pb-3"
             >
               {/* className={`group rounded-2xl shadow-lg hover:shadow-xl transition-all overflow-hidden ${project.bgColor}`} */}
               <div
-                className={`relative overflow-hidden aspect-video ${project.bgColor} `}
+                className={`relative overflow-hidden aspect-video ${project.bgColor}`}
               >
-                <h1 className="text-center text-white font-bold pt-3 ">
+                <h1 className="text-center text-white font-bold pb-10 mt-1">
                   {project.title}
                 </h1>
+               
                 <Image
                   src={project.image}
                   alt={project.title}
                   layout="fill"
                   objectFit="cover"
-                  className="group-hover:scale-105 transition-transform duration-500 pt-10"
+                  className="group-hover:scale-95 transition-transform duration-500"
                 />
+               
               </div>
               <div className="p-8">
                 <div className="flex items-center gap-2 mb-4">

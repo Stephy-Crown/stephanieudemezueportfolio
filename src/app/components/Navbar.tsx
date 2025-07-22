@@ -56,7 +56,7 @@ export default function Navbar() {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 font-semibold">
             {["About", "Skills", "Projects", "Contact"].map((item) => (
               <Link
                 key={item}

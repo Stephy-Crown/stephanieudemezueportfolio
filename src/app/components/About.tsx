@@ -79,12 +79,7 @@ export default function About() {
             {/* Text Content */}
             <div className="space-y-6">
               <p className="text-lg text-gray-600 leading-relaxed">
-                With over 2 years of experience in front-end web development, I
-                excel at crafting responsive and scalable web applications that
-                address real-world challenges. Leveraging my technical expertise
-                and a keen eye for user experience design, I create responsive,
-                seamless and engaging interfaces that prioritize functionality
-                and aesthetics.
+                I excel at crafting responsive and scalable web applications that address real-world challenges. Leveraging my technical expertise and a keen eye for user experience design, I create seamless and engaging interfaces that prioritize functionality and aesthetics.
               </p>
 
               {/* Features */}
