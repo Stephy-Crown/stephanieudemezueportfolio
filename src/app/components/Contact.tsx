@@ -82,8 +82,8 @@ export default function Contact() {
 
     emailjs
       .send(serviceKey, templateKey, {
-        from_name: formData.name,
-        from_email: formData.email,
+        name: formData.name,
+        email: formData.email,
         message: formData.message,
       })
       .then(
