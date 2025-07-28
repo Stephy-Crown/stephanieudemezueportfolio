@@ -40,8 +40,8 @@ export default function Projects() {
       "TypeScript",
       "Argent Wallet",
     ],
-    link: "https://teamverse.xyz", // Replace with actual link
-    github: "", // Add GitHub repo if public
+    link: "https://teamverse-frontend.vercel.app", // Replace with actual link
+    github: "https://github.com/zintarh/teamverse-frontend", // Add GitHub repo if public
     icon: <FaUsers className="text-blue-600 w-6 h-6" />,
     bgColor: "bg-gradient-to-r from-blue-900/90 to-gray-700/90",
   },
@@ -54,7 +54,7 @@ export default function Projects() {
       image: "/1-removebg-preview.png",
       technologies: ["Next.js", "Clerk", "MongoDB"],
       link: "https://next-auth-app-s4s1.vercel.app/",
-      github: "hhttps://github.com/Stephy-Crown/AuthApp",
+      github: "https://github.com/Stephy-Crown/AuthApp",
       icon: <FaRocket className="text-purple-600 w-6 h-6" />,
       bgColor: "bg-purple-600", // Custom background color
     },
@@ -75,8 +75,8 @@ export default function Projects() {
         "A sleek single page portfolio showcasing my skills, projects, and experiences. Includes a Hero section, a Projects section  that highlights my work with descriptions and visuals, and a Contact section for inquiries. It is designed with a clean layout and responsive design for a seamless user experience across devices.",
       image: "/stephfolo.png",
       technologies: ["Next.js", "Figma", "TalwindCSS"],
-      link: "/https://stephanieudemezueportfolio.vercel.app/",
-      github: "",
+      link: "https://stephanieudemezueportfolio.vercel.app",
+      github: "https://github.com/Stephy-Crown/stephanieudemezueportfolio",
       icon: <FaPalette className="text-purple-600 w-6 h-6" />,
       bgColor: "bg-gradient-to-r from-gray-900/90 to-purple-800/90",
     },
