@@ -5,7 +5,7 @@ import {
   FaExternalLinkAlt,
   FaGithub,
   FaRocket,
-  FaShoppingCart,
+  // FaShoppingCart,
   FaPalette,
   FaUsers,
   FaDatabase,
@@ -58,17 +58,17 @@ export default function Projects() {
       icon: <FaRocket className="text-purple-600 w-6 h-6" />,
       bgColor: "bg-purple-600", // Custom background color
     },
-    {
-      title: "Ceremonies Website",
-      description:
-        "A simple beautiful 3-page wedding officiating website designed with a clean, elegant layout and romantic color scheme to create a welcoming online presence. It features a Home page with services and testimonials, an About page highlighting the officiant's story, and a Contact page to easily book wedding services.",
-      image: "/beautfulceremony.png",
-      technologies: ["Next.js", "TalwindCSS"],
-      link: "https://bcapp.netlify.app/",
-      github: "",
-      icon: <FaShoppingCart className="text-purple-600 w-6 h-6" />,
-      bgColor: "bg-fuchsia-800",
-    },
+    // {
+    //   title: "Ceremonies Website",
+    //   description:
+    //     "A simple beautiful 3-page wedding officiating website designed with a clean, elegant layout and romantic color scheme to create a welcoming online presence. It features a Home page with services and testimonials, an About page highlighting the officiant's story, and a Contact page to easily book wedding services.",
+    //   image: "/beautfulceremony.png",
+    //   technologies: ["Next.js", "TalwindCSS"],
+    //   link: "https://bcapp.netlify.app/",
+    //   github: "",
+    //   icon: <FaShoppingCart className="text-purple-600 w-6 h-6" />,
+    //   bgColor: "bg-fuchsia-800",
+    // },
      {
       title: "StephFolio",
       description:

@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 
 import RippleEffect from "./components/RippleEffect";
 import About from "./components/About";
+import DesignContent from "./components/DesignContent";
 
 const Home = () => {
   const [pageLoading, setPageLoading] = useState(true);
@@ -32,8 +33,10 @@ const Home = () => {
       <About />
       {/* <div className="bg-[url('/images/hero-pattern.png')]"> */}
       <Skills />
+      <DesignContent/>
       {/* </div> */}
       <Projects />
+      
       <Contact />
       <Footer />
     </div>
