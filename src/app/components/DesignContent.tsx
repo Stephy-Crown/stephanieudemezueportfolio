@@ -38,7 +38,7 @@ const DesignContent = () => {
               className="text-purple-400 hover:text-purple-300 text-sm sm:text-base"
               aria-label="View X community graphic on X"
             >
-              View on X
+              View Profile on X
             </Link>
           </div>
 
@@ -60,7 +60,7 @@ const DesignContent = () => {
               className="text-purple-400 hover:text-purple-300 text-sm sm:text-base"
               aria-label="View tech tip infographic on X"
             >
-              View on X
+              View Profile on X
             </Link>
           </div>
 
