@@ -5,14 +5,13 @@ import {
   FaExternalLinkAlt,
   FaGithub,
   FaRocket,
-  // FaShoppingCart,
   FaPalette,
   FaUsers,
   FaDatabase,
   FaChartLine,
-  // FaUserGraduate,
+  FaShoppingCart,
 } from "react-icons/fa";
-// import { FaProjectDiagram } from "react-icons/fa"; // Import a project-related icon
+
 
 export default function Projects() {
   const projects = [
@@ -29,7 +28,7 @@ export default function Projects() {
     bgColor: "bg-gradient-to-r from-green-900/90 to-gray-800/90",
   },
   {
-    title: "Teamverse",
+    title: "TeamVerse",
     description:
       "An open-source gamified team bonding platform enhancing remote collaboration using games and seamless Web3 onboarding via Argent Invisible Wallet. Built with accessible and modern frontend technologies.",
     image: "/teamverse.png", // Update with actual image path
@@ -58,17 +57,17 @@ export default function Projects() {
       icon: <FaRocket className="text-purple-600 w-6 h-6" />,
       bgColor: "bg-purple-600", // Custom background color
     },
-    // {
-    //   title: "Ceremonies Website",
-    //   description:
-    //     "A simple beautiful 3-page wedding officiating website designed with a clean, elegant layout and romantic color scheme to create a welcoming online presence. It features a Home page with services and testimonials, an About page highlighting the officiant's story, and a Contact page to easily book wedding services.",
-    //   image: "/beautfulceremony.png",
-    //   technologies: ["Next.js", "TalwindCSS"],
-    //   link: "https://bcapp.netlify.app/",
-    //   github: "",
-    //   icon: <FaShoppingCart className="text-purple-600 w-6 h-6" />,
-    //   bgColor: "bg-fuchsia-800",
-    // },
+    {
+      title: "Ceremonies Website",
+      description:
+        "A simple beautiful 3-page wedding officiating website designed with a clean, elegant layout and romantic color scheme to create a welcoming online presence. It features a Home page with services and testimonials, an About page highlighting the officiant's story, and a Contact page to easily book wedding services.",
+      image: "/beautfulceremony.png",
+      technologies: ["Next.js", "TalwindCSS"],
+      link: "https://bcapp.netlify.app/",
+      github: "",
+      icon: <FaShoppingCart className="text-purple-600 w-6 h-6" />,
+      bgColor: "bg-fuchsia-800",
+    },
      {
       title: "StephFolio",
       description:
@@ -92,6 +91,17 @@ export default function Projects() {
 //   icon: <FaUserGraduate className="text-yellow-600 w-6 h-6" />,
 //   bgColor: "bg-gradient-to-r from-yellow-700/90 to-gray-900/90",
 // },
+{
+  title: "EAI MarketHUb",
+  description:
+    "EAI MarketHUb is a modern web platform that connects users who want to earn money from social media with brands and businesses seeking online exposure. Users can post tasks, complete promotional activities, and get paid instantly. Delivering a secure engaging, and professional experience for digital taskers and advertisers alike.",
+  image: "/Copy of Morph Apple Macbook UI Background Slides (10).png",
+  technologies: ["Next.js", "TailwindCSS", "Firebase", "React"],
+  link: "https://markethub-edu.vercel.app/",
+  github: "",
+  icon: <FaPalette className="text-purple-600 w-6 h-6" />,
+  bgColor: "bg-orange-700",
+},
 
     {
       title: "IMDB Movie Clone App",
